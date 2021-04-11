@@ -76,7 +76,7 @@ async function run() {
                 .then(function({ name, id, email, title }) {
 
                     if (title === "Manager") {
-                        runInquirerManager().then(function(officeNumber)) {
+                        runInquirerManager().then(function(officeNumber) {
                             this.employee = new Manager(name, id, email, officeNumber);
                             console.log(officeNumber);
                             employeeArray.push(employee);
@@ -99,7 +99,26 @@ async function run() {
                             resolve("done");
                         });
                     }
-                }
-        }
+                }).catch(function(err) {
+                    console.log("There was an error");
+                    console.log(err);
+                });
+        });
+
+        const result = await promise;
+        console.log(result);
     }
+
+
+    let html = `
+    
+    
+    
+    
+    
+    
+    `
+
+
+
 }
