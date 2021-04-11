@@ -111,13 +111,125 @@ async function run() {
 
 
     let html = `
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Team Profile Generator</title>
     
+    <style>
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: white;
+            color: lightpink;
+            margin: 20px;
+        }       
+
+        .text {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: white;
+            color: black;
+            margin: 20px;
+        }
+
+        .col {
+            flex: 1;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-center align-items-center">
+        <span class="navbar-brand mb-0 h1">
+            <h1>My Team</h1>
+        </span>
+    </nav>
+    <div class="row">
+        <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
+            <div class="col card-header">
+                <h4>Christine</h4>
+            </div>
+
+            <div class="col card-header">
+                <h4>Manager</h4>
+            </div>
+
+            <ul class="list-group list-group-flush text">
+                <li class="list-group-item">ID: 1</li>
+                <li class="list-group-item">Email: christine@mail.com</li>
+                <li class="list-group-item">Office Number: 1</li>
+            </ul>
+        </div>
+        <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
+            <div class="col card-header">
+                <h4>Christine</h4>
+            </div>
+
+            <div class="col card-header">
+                <h4>Engineer</h4>
+            </div>
+
+            <ul class="list-group list-group-flush text">
+                <li class="list-group-item">ID: 2</li>
+                <li class="list-group-item">Email: christine@mail.com</li>
+                <li class="list-group-item">GitHub: ctinengyn</li>
+            </ul>
+        </div>
+        <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
+            <div class="col card-header">
+                <h4>Christine</h4>
+            </div>
+
+            <div class="col card-header">
+                <h4>Intern</h4>
+            </div>
+
+            <ul class="list-group list-group-flush text">
+                <li class="list-group-item">ID: 3</li>
+                <li class="list-group-item">Email: christine@mail.com</li>
+                <li class="list-group-item">School: UW</li>
+            </ul>
+        </div>
+        <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
+            <div class="col card-header">
+                <h4>Christine</h4>
+            </div>
+
+            <div class="col card-header">
+                <h4>Intern</h4>
+            </div>
+
+            <ul class="list-group list-group-flush text">
+                <li class="list-group-item">ID: 4</li>
+                <li class="list-group-item">Email: christine@mail.com</li>
+                <li class="list-group-item">School: UW</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
     
-    
-    
-    
-    
-    `
+`
 
 
 
