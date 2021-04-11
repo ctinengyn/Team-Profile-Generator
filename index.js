@@ -230,6 +230,26 @@ async function run() {
 </html>
     
 `
+    for (let i in employeeArray) {
+        employee = employeeArray[i];
+        let cardInfo = {
+            name: employee.getName(),
+            role: employee.getRole(),
+            id: employee.getId(),
+            email: employee.getEmail()
+        }
+
+        if (employee.getRole() == "Engineer") {
+            cardInfo.github = employee.getGithub();
+        } else if (employee.getRole() == "Manager") {
+            cardInfo.officeNumber = employee.getOfficeNumber();
+        } else if (employee.getRole() == "Intern") {
+            cardInfo.school = employee.getSchool();
+        }
+
+        html += getCardHtml(cardInfo);
+    }
+
 
 
 
