@@ -250,7 +250,16 @@ async function run() {
         html += getCardHtml(cardInfo);
     }
 
+    const fs = require("fs");
+    fs.writeFile("newfile.html", html, function(err) {
+        if (err) throw err;
+        console.log("File is created successfully");
+    });
+}
+run()
 
+function getCardHtml(cardInfo) {
+    let html = "<div>";
 
-
+    return html;
 }
