@@ -23,7 +23,7 @@ function runInquirer() {
         name: "email"
     },
     {
-        type: "input",
+        type: "rawlist",
         message: "Would you like to add another employee?",
         choices: ["Engineer", "Intern", "Manager"],
         name: "title"
@@ -68,7 +68,11 @@ function runInquirerIntern() {
 
 
 async function run() {
-    let employeeArray = [];
+    let managerArray = [];
+    let engineerArray = [];
+    let internArray = [];
+
+
     const maxTimes = 4;
     for (i = 0; i < maxTimes; i++) {
         const promise = new Promise((resolve, reject) => {
@@ -79,7 +83,7 @@ async function run() {
                         runInquirerManager().then(function(officeNumber) {
                             this.employee = new Manager(name, id, email, officeNumber);
                             console.log(officeNumber);
-                            employeeArray.push(employee);
+                            managerArray.push(employee);
                             resolve("done");
                         });
 
@@ -87,7 +91,7 @@ async function run() {
                         runInquirerEngineer().then(function({ github }) {
                             this.employee = new Engineer(name, id, email, github);
                             console.log(github);
-                            employeeArray.push(employee);
+                            engineerArray.push(employee);
                             resolve("done");
                         });
 
@@ -95,7 +99,7 @@ async function run() {
                         runInquirerIntern().then(function({ school }) {
                             this.employee = new Intern(name, id, email, school);
                             console.log(school)
-                            employeeArray.push(employee);
+                            internArray.push(employee);
                             resolve("done");
                         });
                     }
@@ -166,62 +170,62 @@ async function run() {
     <div class="row">
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>${employeeArray[i].name}</h4>
+                <h4>${managerArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>${employeeArray[i].title}</h4>
+                <h4>${managerArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID:${employeeArray[i].id}</li>
-                <li class="list-group-item">Email:${employeeArray[i].email}</li>
-                <li class="list-group-item">Office Number:${employeeArray[i].officeNumber}</li>
+                <li class="list-group-item">ID:${managerArray[i].id}</li>
+                <li class="list-group-item">Email:${managerArray[i].email}</li>
+                <li class="list-group-item">Office Number:${managerArray[i].officeNumber}</li>
             </ul>
         </div>
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>${employeeArray[i].name}</h4>
+                <h4>${engineerArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>${employeeArray[i].title}</h4>
+                <h4>${engineerArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID:${employeeArray[i].id}</li>
-                <li class="list-group-item">Email:${employeeArray[i].email}</li>
-                <li class="list-group-item">GitHub:${employeeArray[i].github}</li>
+                <li class="list-group-item">ID:${engineerArray[i].id}</li>
+                <li class="list-group-item">Email:${engineerArray[i].email}</li>
+                <li class="list-group-item">GitHub:${engineerArray[i].github}</li>
             </ul>
         </div>
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>${employeeArray[i].name}</h4>
+                <h4>${internArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>${employeeArray[i].title}</h4>
+                <h4>${internArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID:${employeeArray[i].id}</li>
-                <li class="list-group-item">Email:${employeeArray[i].email}</li>
-                <li class="list-group-item">School:${employeeArray[i].school}</li>
+                <li class="list-group-item">ID:${internArray[i].id}</li>
+                <li class="list-group-item">Email:${internArray[i].email}</li>
+                <li class="list-group-item">School:${internArray[i].school}</li>
             </ul>
         </div>
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>${employeeArray[i].name}</h4>
+                <h4>${managerArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>${employeeArray[i].title}</h4>
+                <h4>${managerArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID:${employeeArray[i].id}</li>
-                <li class="list-group-item">Email:${employeeArray[i].email}</li>
-                <li class="list-group-item">School:${employeeArray[i].officeNumber}</li>
+                <li class="list-group-item">ID:${managerArray[i].id}</li>
+                <li class="list-group-item">Email:${managerArray[i].email}</li>
+                <li class="list-group-item">School:${managerArray[i].officeNumber}</li>
             </ul>
         </div>
     </div>
