@@ -166,62 +166,62 @@ async function run() {
     <div class="row">
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>Christine</h4>
+                <h4>${employeeArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>Manager</h4>
+                <h4>${employeeArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID: 1</li>
-                <li class="list-group-item">Email: christine@mail.com</li>
-                <li class="list-group-item">Office Number: 1</li>
+                <li class="list-group-item">ID:${employeeArray[i].id}</li>
+                <li class="list-group-item">Email:${employeeArray[i].email}</li>
+                <li class="list-group-item">Office Number:${employeeArray[i].officeNumber}</li>
             </ul>
         </div>
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>Christine</h4>
+                <h4>${employeeArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>Engineer</h4>
+                <h4>${employeeArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID: 2</li>
-                <li class="list-group-item">Email: christine@mail.com</li>
-                <li class="list-group-item">GitHub: ctinengyn</li>
+                <li class="list-group-item">ID:${employeeArray[i].id}</li>
+                <li class="list-group-item">Email:${employeeArray[i].email}</li>
+                <li class="list-group-item">GitHub:${employeeArray[i].github}</li>
             </ul>
         </div>
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>Christine</h4>
+                <h4>${employeeArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>Intern</h4>
+                <h4>${employeeArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID: 3</li>
-                <li class="list-group-item">Email: christine@mail.com</li>
-                <li class="list-group-item">School: UW</li>
+                <li class="list-group-item">ID:${employeeArray[i].id}</li>
+                <li class="list-group-item">Email:${employeeArray[i].email}</li>
+                <li class="list-group-item">School:${employeeArray[i].school}</li>
             </ul>
         </div>
         <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
             <div class="col card-header">
-                <h4>Christine</h4>
+                <h4>${employeeArray[i].name}</h4>
             </div>
 
             <div class="col card-header">
-                <h4>Intern</h4>
+                <h4>${employeeArray[i].title}</h4>
             </div>
 
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID: 4</li>
-                <li class="list-group-item">Email: christine@mail.com</li>
-                <li class="list-group-item">School: UW</li>
+                <li class="list-group-item">ID:${employeeArray[i].id}</li>
+                <li class="list-group-item">Email:${employeeArray[i].email}</li>
+                <li class="list-group-item">School:${employeeArray[i].officeNumber}</li>
             </ul>
         </div>
     </div>
