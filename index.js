@@ -140,8 +140,8 @@ function createManagerCard() {
                 <h4><i class="fas fa-mug-hot"></i>${managerArray[i].title}</h4>
             </div>
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID:${managerArray[i].id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${managerArray[i].email}</a></li>
+                <li class="list-group-item">ID: ${managerArray[i].id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${managerArray[i].email}">${managerArray[i].email}</a></li>
                 <li class="list-group-item">Office Number: ${managerArray[i].officeNumber}</li>
             </ul>
         </div>`
@@ -161,8 +161,8 @@ function createEngineerCard() {
                 <h4><i class="fas fa-glasses"></i>${engineerArray[i].title}</h4>
             </div>
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID:${engineerArray[i].id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${engineerArray[i].email}</a></li>
+                <li class="list-group-item">ID: ${engineerArray[i].id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${engineerArray[i].email}">${engineerArray[i].email}</a></li>
                 <li class="list-group-item">GitHub: <a href="https://www.github.com/${engineerArray[i].github}">${engineerArray[i].github}</a></li>
             </ul>
         </div>`
@@ -182,8 +182,8 @@ function createInternCard() {
                 <h4><i class="fas fa-user-graduate"></i>${internArray[i].title}</h4>
             </div>
             <ul class="list-group list-group-flush text">
-                <li class="list-group-item">ID:${internArray[i].id}</li>
-                <li class="list-group-item">Email:${internArray[i].email}</li>
+                <li class="list-group-item">ID: ${internArray[i].id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${internArray[i].email}">${internArray[i].email}</a></li>
                 <li class="list-group-item">School: ${internArray[i].school}</li>
             </ul>
         </div>`
